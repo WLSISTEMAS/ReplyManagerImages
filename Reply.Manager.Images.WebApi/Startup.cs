@@ -22,7 +22,7 @@ namespace Reply.Manager.Images.WebApi
         protected override ApiMetadata ApiMetadata => new ApiMetadata()
         {
             Name = "Reply.Manager.Images",
-            Description = "Exemplo de implementação de uma API de fachada para o TMDb API.",
+            Description = "Reply WebApi",
             DefaultApiVersion = "1.0"
         };
 
