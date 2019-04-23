@@ -1,0 +1,4 @@
+apiVersion: v1
+description: Definicoes para reply.manager.images
+name: reply.manager.images
+version: 0.1.0

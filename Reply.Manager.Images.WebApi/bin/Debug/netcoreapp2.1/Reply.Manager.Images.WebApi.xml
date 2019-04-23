@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Reply.Manager.Images.WebApi</name>
+    </assembly>
+    <members>
+        <member name="M:Reply.Manager.Images.WebApi.Controllers.FilmesController.GetFilmesAsync(Reply.Manager.Images.WebApi.Dtos.FilmesGet)">
+            <summary>
+            Pesquisa por filmes.
+            </summary>
+            <param name="filmesGet">Criterios de pesquisa na base de filmes.</param>
+            <response code="200">Lista de resultados.</response>
+            <response code="400">Parametros incorretos ou limite de utilização excedido.</response>
+            <response code="500">Erro interno.</response>
+        </member>
+        <member name="P:Reply.Manager.Images.WebApi.Dtos.FilmesGet.TermoPesquisa">
+            <summary>
+            Termo a ser pesquisado.
+            </summary>
+        </member>
+        <member name="P:Reply.Manager.Images.WebApi.Dtos.FilmesGet.AnoLancamento">
+            <summary>
+            Ano de lançamento.
+            </summary>
+        </member>
+        <member name="P:Reply.Manager.Images.WebApi.Dtos.FilmesGetResult.Id">
+            <summary>
+            Identificador do filme no The Moview Database.
+            </summary>
+        </member>
+        <member name="P:Reply.Manager.Images.WebApi.Dtos.FilmesGetResult.Nome">
+            <summary>
+            Nome do filme.
+            </summary>
+        </member>
+        <member name="P:Reply.Manager.Images.WebApi.Dtos.FilmesGetResult.Descricao">
+            <summary>
+            Descricao/Resumo do filme.
+            </summary>
+        </member>
+        <member name="P:Reply.Manager.Images.WebApi.Dtos.FilmesGetResult.DataLancamento">
+            <summary>
+            Data de lancamento do filme.
+            </summary>
+        </member>
+        <member name="T:Reply.Manager.Images.WebApi.Startup">
+            <summary>
+            Este eh o Startup da API. 
+            <para>
+            A base <see cref="T:Otc.AspNetCore.ApiBoot.ApiBootStartup"/> implementa uma serie de requisitos que consideramos
+            necessarios para qualquer API, como Log, Swagger, Authorizacao, Versionamento e mais.
+            Veja https://github.com/OleConsignado/otc-aspnetcore-apiboot para maiores detalhes (talvez a documentacao ainda esteja em construcao).
+            </para>
+            </summary>
+        </member>
+        <member name="M:Reply.Manager.Images.WebApi.Startup.ConfigureApiServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Registra os servicos especificos da API.
+            </summary>
+            <param name="services"></param>
+        </member>
+    </members>
+</doc>

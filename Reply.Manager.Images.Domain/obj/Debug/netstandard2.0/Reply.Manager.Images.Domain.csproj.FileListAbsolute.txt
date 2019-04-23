@@ -1,0 +1,10 @@
+C:\Users\otc91010\Documents\Reply\ReplyManagerImages\Reply.Manager.Images.Domain\bin\Debug\netstandard2.0\Reply.Manager.Images.Domain.xml
+C:\Users\otc91010\Documents\Reply\ReplyManagerImages\Reply.Manager.Images.Domain\bin\Debug\netstandard2.0\Reply.Manager.Images.Domain.deps.json
+C:\Users\otc91010\Documents\Reply\ReplyManagerImages\Reply.Manager.Images.Domain\bin\Debug\netstandard2.0\Reply.Manager.Images.Domain.dll
+C:\Users\otc91010\Documents\Reply\ReplyManagerImages\Reply.Manager.Images.Domain\bin\Debug\netstandard2.0\Reply.Manager.Images.Domain.pdb
+C:\Users\otc91010\Documents\Reply\ReplyManagerImages\Reply.Manager.Images.Domain\obj\Debug\netstandard2.0\Reply.Manager.Images.Domain.csprojAssemblyReference.cache
+C:\Users\otc91010\Documents\Reply\ReplyManagerImages\Reply.Manager.Images.Domain\obj\Debug\netstandard2.0\Reply.Manager.Images.Domain.csproj.CoreCompileInputs.cache
+C:\Users\otc91010\Documents\Reply\ReplyManagerImages\Reply.Manager.Images.Domain\obj\Debug\netstandard2.0\Reply.Manager.Images.Domain.AssemblyInfoInputs.cache
+C:\Users\otc91010\Documents\Reply\ReplyManagerImages\Reply.Manager.Images.Domain\obj\Debug\netstandard2.0\Reply.Manager.Images.Domain.AssemblyInfo.cs
+C:\Users\otc91010\Documents\Reply\ReplyManagerImages\Reply.Manager.Images.Domain\obj\Debug\netstandard2.0\Reply.Manager.Images.Domain.dll
+C:\Users\otc91010\Documents\Reply\ReplyManagerImages\Reply.Manager.Images.Domain\obj\Debug\netstandard2.0\Reply.Manager.Images.Domain.pdb

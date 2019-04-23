@@ -1,0 +1,14 @@
+C:\Users\otc91010\Documents\Reply\ReplyManagerImages\Reply.Manager.Images.TmdbAdapter\bin\Debug\netstandard2.0\Reply.Manager.Images.TmdbAdapter.xml
+C:\Users\otc91010\Documents\Reply\ReplyManagerImages\Reply.Manager.Images.TmdbAdapter\bin\Debug\netstandard2.0\Reply.Manager.Images.TmdbAdapter.deps.json
+C:\Users\otc91010\Documents\Reply\ReplyManagerImages\Reply.Manager.Images.TmdbAdapter\bin\Debug\netstandard2.0\Reply.Manager.Images.TmdbAdapter.dll
+C:\Users\otc91010\Documents\Reply\ReplyManagerImages\Reply.Manager.Images.TmdbAdapter\bin\Debug\netstandard2.0\Reply.Manager.Images.TmdbAdapter.pdb
+C:\Users\otc91010\Documents\Reply\ReplyManagerImages\Reply.Manager.Images.TmdbAdapter\bin\Debug\netstandard2.0\Reply.Manager.Images.Domain.dll
+C:\Users\otc91010\Documents\Reply\ReplyManagerImages\Reply.Manager.Images.TmdbAdapter\bin\Debug\netstandard2.0\Reply.Manager.Images.Domain.pdb
+C:\Users\otc91010\Documents\Reply\ReplyManagerImages\Reply.Manager.Images.TmdbAdapter\bin\Debug\netstandard2.0\Reply.Manager.Images.Domain.xml
+C:\Users\otc91010\Documents\Reply\ReplyManagerImages\Reply.Manager.Images.TmdbAdapter\obj\Debug\netstandard2.0\Reply.Manager.Images.TmdbAdapter.csprojAssemblyReference.cache
+C:\Users\otc91010\Documents\Reply\ReplyManagerImages\Reply.Manager.Images.TmdbAdapter\obj\Debug\netstandard2.0\Reply.Manager.Images.TmdbAdapter.csproj.CoreCompileInputs.cache
+C:\Users\otc91010\Documents\Reply\ReplyManagerImages\Reply.Manager.Images.TmdbAdapter\obj\Debug\netstandard2.0\Reply.Manager.Images.TmdbAdapter.AssemblyInfoInputs.cache
+C:\Users\otc91010\Documents\Reply\ReplyManagerImages\Reply.Manager.Images.TmdbAdapter\obj\Debug\netstandard2.0\Reply.Manager.Images.TmdbAdapter.AssemblyInfo.cs
+C:\Users\otc91010\Documents\Reply\ReplyManagerImages\Reply.Manager.Images.TmdbAdapter\obj\Debug\netstandard2.0\Reply.Manager.Images.TmdbAdapter.csproj.CopyComplete
+C:\Users\otc91010\Documents\Reply\ReplyManagerImages\Reply.Manager.Images.TmdbAdapter\obj\Debug\netstandard2.0\Reply.Manager.Images.TmdbAdapter.dll
+C:\Users\otc91010\Documents\Reply\ReplyManagerImages\Reply.Manager.Images.TmdbAdapter\obj\Debug\netstandard2.0\Reply.Manager.Images.TmdbAdapter.pdb

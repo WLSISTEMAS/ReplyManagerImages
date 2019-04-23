@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Reply.Manager.Images.Domain</name>
+    </assembly>
+    <members>
+        <member name="M:Reply.Manager.Images.Domain.Adapters.ITmdbAdapter.GetFilmesAsync(Reply.Manager.Images.Domain.Models.Pesquisa,System.String)">
+            <summary>
+            Realiza pesquisa em filmes.
+            </summary>
+            <param name="pesquisa">Criterios de pesquisa.</param>
+            <param name="idioma">Idioma da pesquisa/resultado</param>
+            <returns>Lista dos filmes encontrados conforme criterio de pesquisa.</returns>
+            <exception cref="T:Reply.Manager.Images.Domain.Exceptions.BuscarFilmesCoreException" />
+        </member>
+        <member name="P:Reply.Manager.Images.Domain.Models.Filme.Id">
+            <summary>
+            Identificador do filme no The Moview Database.
+            </summary>
+        </member>
+        <member name="P:Reply.Manager.Images.Domain.Models.Filme.Nome">
+            <summary>
+            Nome do filme.
+            </summary>
+        </member>
+        <member name="P:Reply.Manager.Images.Domain.Models.Filme.Descricao">
+            <summary>
+            Descricao/Resumo do filme.
+            </summary>
+        </member>
+        <member name="P:Reply.Manager.Images.Domain.Models.Filme.DataLancamento">
+            <summary>
+            Data de lancamento do filme.
+            </summary>
+        </member>
+        <member name="P:Reply.Manager.Images.Domain.Models.Pesquisa.TermoPesquisa">
+            <summary>
+            Termo a ser pesquisado.
+            </summary>
+        </member>
+        <member name="P:Reply.Manager.Images.Domain.Models.Pesquisa.AnoLancamento">
+            <summary>
+            Ano de lançamento.
+            </summary>
+        </member>
+        <member name="M:Reply.Manager.Images.Domain.Services.IFilmesService.ObterFilmesAsync(Reply.Manager.Images.Domain.Models.Pesquisa)">
+            <summary>
+            Realiza pesquisa em filmes.
+            </summary>
+            <param name="pesquisa">Criterios de pesquisa.</param>
+            <returns>Lista dos filmes encontrados conforme criterio de pesquisa.</returns>
+            <exception cref="T:Reply.Manager.Images.Domain.Exceptions.BuscarFilmesCoreException" />
+            <exception cref="T:Otc.DomainBase.Exceptions.ModelValidationException" />
+        </member>
+    </members>
+</doc>
