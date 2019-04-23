@@ -24,6 +24,9 @@
 
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="8.0.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.5" />
+    <PackageReference Include="MimeTypeMap.Core" Version="1.0.0" />
+    <PackageReference Include="MimeTypeMap.List" Version="2.0.1" />
     <PackageReference Include="Otc.Validations.Helpers" Version="2.0.0" />
     <PackageReference Include="Otc.AspNetCore.ApiBoot" Version="3.0.0" />
   </ItemGroup>
@@ -41,6 +44,10 @@
     <None Update="Dockerfile">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\upload\" />
   </ItemGroup>
 
 </Project>
