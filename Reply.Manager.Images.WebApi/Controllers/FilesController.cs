@@ -24,7 +24,7 @@ namespace Reply.Manager.Images.WebApi.Controllers
 
         [Route("upload")]
         [HttpPost, AllowAnonymous]
-        public async Task<IActionResult> Post(List<IFormFile> files)
+        public async Task<IActionResult> Post(List<IFormFile> files, string name, string description)
         {
             var size = files.Sum(f => f.Length);
 
