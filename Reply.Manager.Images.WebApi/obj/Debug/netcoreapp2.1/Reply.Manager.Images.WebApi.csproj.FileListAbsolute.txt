@@ -1,7 +1,3 @@
-C:\Users\otc91010\Documents\Reply\ReplyManagerImages\Reply.Manager.Images.WebApi\obj\Debug\netcoreapp2.1\Reply.Manager.Images.WebApi.csprojAssemblyReference.cache
-C:\Users\otc91010\Documents\Reply\ReplyManagerImages\Reply.Manager.Images.WebApi\obj\Debug\netcoreapp2.1\Reply.Manager.Images.WebApi.csproj.CoreCompileInputs.cache
-C:\Users\otc91010\Documents\Reply\ReplyManagerImages\Reply.Manager.Images.WebApi\obj\Debug\netcoreapp2.1\Reply.Manager.Images.WebApi.AssemblyInfoInputs.cache
-C:\Users\otc91010\Documents\Reply\ReplyManagerImages\Reply.Manager.Images.WebApi\obj\Debug\netcoreapp2.1\Reply.Manager.Images.WebApi.AssemblyInfo.cs
 C:\Users\otc91010\Documents\Reply\ReplyManagerImages\Reply.Manager.Images.WebApi\bin\Debug\netcoreapp2.1\.dockerignore
 C:\Users\otc91010\Documents\Reply\ReplyManagerImages\Reply.Manager.Images.WebApi\bin\Debug\netcoreapp2.1\Dockerfile
 C:\Users\otc91010\Documents\Reply\ReplyManagerImages\Reply.Manager.Images.WebApi\bin\Debug\netcoreapp2.1\Reply.Manager.Images.WebApi.xml
@@ -12,12 +8,18 @@ C:\Users\otc91010\Documents\Reply\ReplyManagerImages\Reply.Manager.Images.WebApi
 C:\Users\otc91010\Documents\Reply\ReplyManagerImages\Reply.Manager.Images.WebApi\bin\Debug\netcoreapp2.1\Reply.Manager.Images.WebApi.pdb
 C:\Users\otc91010\Documents\Reply\ReplyManagerImages\Reply.Manager.Images.WebApi\bin\Debug\netcoreapp2.1\Reply.Manager.Images.Application.dll
 C:\Users\otc91010\Documents\Reply\ReplyManagerImages\Reply.Manager.Images.WebApi\bin\Debug\netcoreapp2.1\Reply.Manager.Images.Domain.dll
+C:\Users\otc91010\Documents\Reply\ReplyManagerImages\Reply.Manager.Images.WebApi\bin\Debug\netcoreapp2.1\Reply.Manager.Images.PictureAdapter.dll
 C:\Users\otc91010\Documents\Reply\ReplyManagerImages\Reply.Manager.Images.WebApi\bin\Debug\netcoreapp2.1\Reply.Manager.Images.TmdbAdapter.dll
 C:\Users\otc91010\Documents\Reply\ReplyManagerImages\Reply.Manager.Images.WebApi\bin\Debug\netcoreapp2.1\Reply.Manager.Images.Application.pdb
+C:\Users\otc91010\Documents\Reply\ReplyManagerImages\Reply.Manager.Images.WebApi\bin\Debug\netcoreapp2.1\Reply.Manager.Images.PictureAdapter.pdb
 C:\Users\otc91010\Documents\Reply\ReplyManagerImages\Reply.Manager.Images.WebApi\bin\Debug\netcoreapp2.1\Reply.Manager.Images.TmdbAdapter.pdb
 C:\Users\otc91010\Documents\Reply\ReplyManagerImages\Reply.Manager.Images.WebApi\bin\Debug\netcoreapp2.1\Reply.Manager.Images.TmdbAdapter.xml
 C:\Users\otc91010\Documents\Reply\ReplyManagerImages\Reply.Manager.Images.WebApi\bin\Debug\netcoreapp2.1\Reply.Manager.Images.Domain.pdb
 C:\Users\otc91010\Documents\Reply\ReplyManagerImages\Reply.Manager.Images.WebApi\bin\Debug\netcoreapp2.1\Reply.Manager.Images.Domain.xml
+C:\Users\otc91010\Documents\Reply\ReplyManagerImages\Reply.Manager.Images.WebApi\obj\Debug\netcoreapp2.1\Reply.Manager.Images.WebApi.csprojAssemblyReference.cache
+C:\Users\otc91010\Documents\Reply\ReplyManagerImages\Reply.Manager.Images.WebApi\obj\Debug\netcoreapp2.1\Reply.Manager.Images.WebApi.csproj.CoreCompileInputs.cache
+C:\Users\otc91010\Documents\Reply\ReplyManagerImages\Reply.Manager.Images.WebApi\obj\Debug\netcoreapp2.1\Reply.Manager.Images.WebApi.AssemblyInfoInputs.cache
+C:\Users\otc91010\Documents\Reply\ReplyManagerImages\Reply.Manager.Images.WebApi\obj\Debug\netcoreapp2.1\Reply.Manager.Images.WebApi.AssemblyInfo.cs
 C:\Users\otc91010\Documents\Reply\ReplyManagerImages\Reply.Manager.Images.WebApi\obj\Debug\netcoreapp2.1\Reply.Manager.Images.WebApi.csproj.CopyComplete
 C:\Users\otc91010\Documents\Reply\ReplyManagerImages\Reply.Manager.Images.WebApi\obj\Debug\netcoreapp2.1\Reply.Manager.Images.WebApi.dll
 C:\Users\otc91010\Documents\Reply\ReplyManagerImages\Reply.Manager.Images.WebApi\obj\Debug\netcoreapp2.1\Reply.Manager.Images.WebApi.pdb

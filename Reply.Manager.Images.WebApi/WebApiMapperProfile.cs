@@ -10,6 +10,7 @@ namespace Reply.Manager.Images.WebApi
         {
             CreateMap<Filme, FilmesGetResult>();
             CreateMap<FilmesGet, Pesquisa>();
+            CreateMap<PicturePost, Picture>();
         }
     }
 }

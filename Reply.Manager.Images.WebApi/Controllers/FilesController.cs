@@ -3,43 +3,64 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Otc.AspNetCore.ApiBoot;
+using Reply.Manager.Images.Domain.Models;
+using Reply.Manager.Images.Domain.Services;
+using Reply.Manager.Images.WebApi.Dtos;
 
 namespace Reply.Manager.Images.WebApi.Controllers
 {
     [ApiVersion("1.0")]
     public class FilesController : ApiController
     {
-        private readonly string _uploadFolder;
+        private readonly IPictureService pictureService;
 
-        public FilesController(IHostingEnvironment hostingEnvironment)
+        public FilesController(IPictureService pictureService)
         {
-            _uploadFolder = $"{hostingEnvironment.WebRootPath}\\Upload";
+            this.pictureService = pictureService ?? throw new ArgumentNullException(nameof(pictureService));
         }
-
 
         [Route("upload")]
         [HttpPost, AllowAnonymous]
         public async Task<IActionResult> Post(List<IFormFile> files, string name, string description)
         {
-            var size = files.Sum(f => f.Length);
+            var file = files.FirstOrDefault();
 
-            foreach (var formFile in files)
+            byte[] fileBytes = CreateImageByte(file);
+
+            PicturePost picturePost = new PicturePost
             {
-                if (formFile.Length > 0)
-                {
-                    using (var stream = new FileStream($"{_uploadFolder}\\{formFile.FileName}", FileMode.Create))
-                    {
-                        await formFile.CopyToAsync(stream);
-                    }
-                }
-            }
+                ImageName = name,
+                Description = description,
+                File = Convert.ToBase64String(fileBytes)
+            };
 
-            return Ok(new { count = files.Count, size });
+            Picture pictureMap = Mapper.Map<PicturePost, Picture>(picturePost);
+
+            Picture picture = await pictureService.UploadPictureAsync(pictureMap);
+
+            PicturePostResult pictureGetResults =
+                Mapper.Map<Picture, PicturePostResult>(picture);
+
+            return Ok(pictureGetResults);
+        }
+
+       
+
+        private static byte[] CreateImageByte(IFormFile file)
+        {
+            MemoryStream stream = new MemoryStream();
+
+            file.CopyTo(stream);
+
+            var fileBytes = stream.ToArray();
+
+            return fileBytes;
         }
 
         [Route("download")]

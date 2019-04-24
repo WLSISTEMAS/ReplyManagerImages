@@ -8,8 +8,10 @@ namespace Reply.Manager.Images.WebApi.Dtos
 {
     public class PicturePost 
     {
+        public Guid Id { get; set; } = Guid.NewGuid();
         public string ImageName { get; set; }
         public string Description { get; set; }
-        public List<IFormFile> File { get; set; }
-    }
+        public string File { get; set; }
+    } 
+    
 }

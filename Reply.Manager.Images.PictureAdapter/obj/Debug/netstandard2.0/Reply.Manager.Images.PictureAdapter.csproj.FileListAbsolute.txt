@@ -1,0 +1,13 @@
+C:\Users\otc91010\Documents\Reply\ReplyManagerImages\Reply.Manager.Images.PictureAdapter\bin\Debug\netstandard2.0\Reply.Manager.Images.PictureAdapter.deps.json
+C:\Users\otc91010\Documents\Reply\ReplyManagerImages\Reply.Manager.Images.PictureAdapter\bin\Debug\netstandard2.0\Reply.Manager.Images.PictureAdapter.dll
+C:\Users\otc91010\Documents\Reply\ReplyManagerImages\Reply.Manager.Images.PictureAdapter\bin\Debug\netstandard2.0\Reply.Manager.Images.PictureAdapter.pdb
+C:\Users\otc91010\Documents\Reply\ReplyManagerImages\Reply.Manager.Images.PictureAdapter\bin\Debug\netstandard2.0\Reply.Manager.Images.Domain.dll
+C:\Users\otc91010\Documents\Reply\ReplyManagerImages\Reply.Manager.Images.PictureAdapter\bin\Debug\netstandard2.0\Reply.Manager.Images.Domain.pdb
+C:\Users\otc91010\Documents\Reply\ReplyManagerImages\Reply.Manager.Images.PictureAdapter\bin\Debug\netstandard2.0\Reply.Manager.Images.Domain.xml
+C:\Users\otc91010\Documents\Reply\ReplyManagerImages\Reply.Manager.Images.PictureAdapter\obj\Debug\netstandard2.0\Reply.Manager.Images.PictureAdapter.csprojAssemblyReference.cache
+C:\Users\otc91010\Documents\Reply\ReplyManagerImages\Reply.Manager.Images.PictureAdapter\obj\Debug\netstandard2.0\Reply.Manager.Images.PictureAdapter.csproj.CoreCompileInputs.cache
+C:\Users\otc91010\Documents\Reply\ReplyManagerImages\Reply.Manager.Images.PictureAdapter\obj\Debug\netstandard2.0\Reply.Manager.Images.PictureAdapter.AssemblyInfoInputs.cache
+C:\Users\otc91010\Documents\Reply\ReplyManagerImages\Reply.Manager.Images.PictureAdapter\obj\Debug\netstandard2.0\Reply.Manager.Images.PictureAdapter.AssemblyInfo.cs
+C:\Users\otc91010\Documents\Reply\ReplyManagerImages\Reply.Manager.Images.PictureAdapter\obj\Debug\netstandard2.0\Reply.Manager.Images.PictureAdapter.csproj.CopyComplete
+C:\Users\otc91010\Documents\Reply\ReplyManagerImages\Reply.Manager.Images.PictureAdapter\obj\Debug\netstandard2.0\Reply.Manager.Images.PictureAdapter.dll
+C:\Users\otc91010\Documents\Reply\ReplyManagerImages\Reply.Manager.Images.PictureAdapter\obj\Debug\netstandard2.0\Reply.Manager.Images.PictureAdapter.pdb

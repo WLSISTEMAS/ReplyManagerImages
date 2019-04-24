@@ -33,6 +33,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Reply.Manager.Images.Application\Reply.Manager.Images.Application.csproj" />
+    <ProjectReference Include="..\Reply.Manager.Images.PictureAdapter\Reply.Manager.Images.PictureAdapter.csproj" />
     <ProjectReference Include="..\Reply.Manager.Images.TmdbAdapter\Reply.Manager.Images.TmdbAdapter.csproj" />
     <ProjectReference Include="..\Reply.Manager.Images.Domain\Reply.Manager.Images.Domain.csproj" />
   </ItemGroup>

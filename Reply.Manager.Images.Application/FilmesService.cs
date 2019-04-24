@@ -32,6 +32,8 @@ namespace Reply.Manager.Images.Application
             ValidationHelper.ThrowValidationExceptionIfNotValid(pesquisa);
             logger.LogInformation("Realizando chamada ao TMDb com os seguintes " +
                 "criterios de pesquisa: {@CriteriosPesquisa}", new { Criterios = pesquisa, configuration.Idioma });
+
+
             IEnumerable<Filme> resultado = await tmdbAdapter.GetFilmesAsync(pesquisa, configuration.Idioma);
             logger.LogInformation("Chamada ao TMDb concluida com sucesso.");
 

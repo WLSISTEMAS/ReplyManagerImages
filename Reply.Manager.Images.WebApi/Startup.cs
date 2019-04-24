@@ -6,6 +6,12 @@ using Otc.AspNetCore.ApiBoot;
 using Otc.Extensions.Configuration;
 using System.Diagnostics.CodeAnalysis;
 using Reply.Manager.Images.Application;
+using Reply.Manager.Images.PictureAdapter;
+using Reply.Manager.Images.PictureAdapter.Microsoft.Extensions.DependencyInjection;
+using System;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Reply.Manager.Images.WebApi
 {
@@ -50,7 +56,26 @@ namespace Reply.Manager.Images.WebApi
         protected override void ConfigureApiServices(IServiceCollection services)
         {
             services.AddTmdbAdapter(Configuration.SafeGet<TmdbAdapterConfiguration>());
+            services.AddPictureAdapter(Configuration.SafeGet<PictureAdapterConfiguration>());
             services.AddApplication(Configuration.SafeGet<ApplicationConfiguration>());
+
+            services.Configure<CookiePolicyOptions>(options =>
+            {
+                options.CheckConsentNeeded = context => true;
+                options.MinimumSameSitePolicy = SameSiteMode.None;
+            });
+
+            services.AddDistributedMemoryCache();
+
+            services.AddMvc()
+                .SetCompatibilityVersion(CompatibilityVersion.Version_2_0);
+
+            services.AddSession(options =>
+            {
+                options.Cookie.Name = ".AdventureWorks.Session";
+                options.IdleTimeout = TimeSpan.FromSeconds(10);
+                options.Cookie.IsEssential = true;
+            });
         }
     }
 }

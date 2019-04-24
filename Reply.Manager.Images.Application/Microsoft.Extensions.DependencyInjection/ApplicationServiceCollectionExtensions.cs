@@ -25,6 +25,7 @@ namespace Microsoft.Extensions.DependencyInjection
 
             // Registra o servico descrito pela interface IFilmesService
             services.AddScoped<IFilmesService, FilmesService>();
+            services.AddScoped<IPictureService, PictureService>();
 
             return services;
         }
