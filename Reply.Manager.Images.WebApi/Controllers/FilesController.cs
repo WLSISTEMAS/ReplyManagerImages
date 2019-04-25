@@ -1,17 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
-using AutoMapper;
+﻿using AutoMapper;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Otc.AspNetCore.ApiBoot;
 using Reply.Manager.Images.Domain.Models;
 using Reply.Manager.Images.Domain.Services;
 using Reply.Manager.Images.WebApi.Dtos;
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace Reply.Manager.Images.WebApi.Controllers
 {
@@ -42,16 +41,15 @@ namespace Reply.Manager.Images.WebApi.Controllers
 
             Picture pictureMap = Mapper.Map<PicturePost, Picture>(picturePost);
 
-            Picture picture = await pictureService.UploadPictureAsync(pictureMap);
+            Picture picture = await pictureService.CreatePictureAsync(pictureMap);
 
             PicturePostResult pictureGetResults =
                 Mapper.Map<Picture, PicturePostResult>(picture);
 
             return Ok(pictureGetResults);
         }
-
-       
-
+        
+        
         private static byte[] CreateImageByte(IFormFile file)
         {
             MemoryStream stream = new MemoryStream();

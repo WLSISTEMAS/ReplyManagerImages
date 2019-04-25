@@ -17,11 +17,10 @@ namespace Reply.Manager.Images.Application
             this.pictureAdapter = pictureAdapter ?? throw new ArgumentNullException(nameof(pictureAdapter));
         }
 
-        public async Task<Picture> UploadPictureAsync(Picture picture)
-        {                   
-            return await Task.Run(() => picture);
+        public async Task<Picture> CreatePictureAsync(Picture picture)
+        {  
+            return await pictureAdapter.CreatePictureAsync(picture);
         }
-
 
     }
 }

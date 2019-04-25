@@ -57,25 +57,7 @@ namespace Reply.Manager.Images.WebApi
         {
             services.AddTmdbAdapter(Configuration.SafeGet<TmdbAdapterConfiguration>());
             services.AddPictureAdapter(Configuration.SafeGet<PictureAdapterConfiguration>());
-            services.AddApplication(Configuration.SafeGet<ApplicationConfiguration>());
-
-            services.Configure<CookiePolicyOptions>(options =>
-            {
-                options.CheckConsentNeeded = context => true;
-                options.MinimumSameSitePolicy = SameSiteMode.None;
-            });
-
-            services.AddDistributedMemoryCache();
-
-            services.AddMvc()
-                .SetCompatibilityVersion(CompatibilityVersion.Version_2_0);
-
-            services.AddSession(options =>
-            {
-                options.Cookie.Name = ".AdventureWorks.Session";
-                options.IdleTimeout = TimeSpan.FromSeconds(10);
-                options.Cookie.IsEssential = true;
-            });
+            services.AddApplication(Configuration.SafeGet<ApplicationConfiguration>());            
         }
     }
 }

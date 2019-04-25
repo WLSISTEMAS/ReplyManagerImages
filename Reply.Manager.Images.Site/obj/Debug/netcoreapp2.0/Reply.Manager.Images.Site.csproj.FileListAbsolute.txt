@@ -1,0 +1,11 @@
+C:\Users\otc91010\Documents\Reply\ReplyManagerImages\Reply.Manager.Images.Site\bin\Debug\netcoreapp2.0\Reply.Manager.Images.Site.deps.json
+C:\Users\otc91010\Documents\Reply\ReplyManagerImages\Reply.Manager.Images.Site\bin\Debug\netcoreapp2.0\Reply.Manager.Images.Site.runtimeconfig.json
+C:\Users\otc91010\Documents\Reply\ReplyManagerImages\Reply.Manager.Images.Site\bin\Debug\netcoreapp2.0\Reply.Manager.Images.Site.runtimeconfig.dev.json
+C:\Users\otc91010\Documents\Reply\ReplyManagerImages\Reply.Manager.Images.Site\bin\Debug\netcoreapp2.0\Reply.Manager.Images.Site.dll
+C:\Users\otc91010\Documents\Reply\ReplyManagerImages\Reply.Manager.Images.Site\obj\Debug\netcoreapp2.0\Reply.Manager.Images.Site.csprojAssemblyReference.cache
+C:\Users\otc91010\Documents\Reply\ReplyManagerImages\Reply.Manager.Images.Site\obj\Debug\netcoreapp2.0\Reply.Manager.Images.Site.csproj.CoreCompileInputs.cache
+C:\Users\otc91010\Documents\Reply\ReplyManagerImages\Reply.Manager.Images.Site\obj\Debug\netcoreapp2.0\Reply.Manager.Images.Site.AssemblyInfoInputs.cache
+C:\Users\otc91010\Documents\Reply\ReplyManagerImages\Reply.Manager.Images.Site\obj\Debug\netcoreapp2.0\Reply.Manager.Images.Site.AssemblyInfo.cs
+C:\Users\otc91010\Documents\Reply\ReplyManagerImages\Reply.Manager.Images.Site\bin\Debug\netcoreapp2.0\Reply.Manager.Images.Site.pdb
+C:\Users\otc91010\Documents\Reply\ReplyManagerImages\Reply.Manager.Images.Site\obj\Debug\netcoreapp2.0\Reply.Manager.Images.Site.dll
+C:\Users\otc91010\Documents\Reply\ReplyManagerImages\Reply.Manager.Images.Site\obj\Debug\netcoreapp2.0\Reply.Manager.Images.Site.pdb

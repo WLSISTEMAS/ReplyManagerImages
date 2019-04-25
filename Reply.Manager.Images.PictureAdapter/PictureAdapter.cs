@@ -1,4 +1,5 @@
-﻿using Reply.Manager.Images.Domain.Adapters;
+﻿using Microsoft.Extensions.Caching.Memory;
+using Reply.Manager.Images.Domain.Adapters;
 using Reply.Manager.Images.Domain.Models;
 using System;
 using System.Collections.Generic;
@@ -9,16 +10,28 @@ namespace Reply.Manager.Images.PictureAdapter
 {
     public class PictureAdapter : IPictureAdapter
     {
-        private readonly PictureAdapterConfiguration pictureAdapterConfiguration;
+        private readonly IMemoryCache memoryCache;        
 
-        public PictureAdapter(PictureAdapterConfiguration pictureAdapterConfiguration)
-        {
-            this.pictureAdapterConfiguration = pictureAdapterConfiguration ?? throw new ArgumentNullException(nameof(pictureAdapterConfiguration));
+        public PictureAdapter(IMemoryCache memoryCache)
+        {            
+            this.memoryCache = memoryCache ?? throw new ArgumentNullException(nameof(memoryCache));
         }
 
-        public async Task<Picture> GetPictureAsync(Picture picture)
+        public async Task<Picture> CreatePictureAsync(Picture picture)
         {
-            return await Task.Run(() => new Picture { });
+            var cacheEntry = await memoryCache.GetOrCreateAsync(Cache.CacheKeys.CachePicture, entry => 
+            {
+                return Task.Run(() => new Picture
+                {
+                    Description = picture.Description,
+                    File = picture.File,
+                    Id = picture.Id,
+                    ImageName = picture.ImageName
+                });
+            });
+
+            return cacheEntry;
         }
+
     }
 }

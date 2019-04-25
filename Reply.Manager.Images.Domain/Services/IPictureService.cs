@@ -8,6 +8,6 @@ namespace Reply.Manager.Images.Domain.Services
 {
     public interface IPictureService
     {
-        Task<Picture> UploadPictureAsync(Picture picture);
+        Task<Picture> CreatePictureAsync(Picture picture);
     }
 }

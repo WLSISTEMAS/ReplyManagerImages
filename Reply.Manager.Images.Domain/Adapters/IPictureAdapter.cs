@@ -8,6 +8,6 @@ namespace Reply.Manager.Images.Domain.Adapters
 {
     public interface IPictureAdapter
     {
-        Task<Picture> GetPictureAsync(Picture picture);
+        Task<Picture> CreatePictureAsync(Picture picture);
     }
 }

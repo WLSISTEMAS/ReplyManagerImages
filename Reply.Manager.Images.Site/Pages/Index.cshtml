@@ -1,0 +1,152 @@
+﻿@page
+<div class="panel panel-body" style="min-height:256px">
+
+    <div class="container">
+        <div class="row">
+            <div class="form-group">
+                <label>Name</label>
+                <input type="text" class="form-control" id="txtName" placeholder="Image Name">
+            </div>
+            <div class="form-group">
+                <label>Description</label>
+                <input type="password" class="form-control" id="txtDescription" placeholder="Description">
+            </div>
+        </div>
+    </div>
+
+    <hr />
+
+
+    <div class="container">
+        <div class="row">
+            <div class="btn btn-primary">
+                <input type="file" id="imageBrowes" />
+            </div>
+
+            <hr />
+
+            <div id="imgPreview" class="thumbnail" style="display:none">
+                <img class="img-responsive" id="targetImg" />
+                <div class="caption">
+                    <a href="#" onclick="ClearPreview()"><i class="glyphicon glyphicon-trash"></i></a>
+                    <span id="description"></span>
+                </div>
+                <a href="#" class="btn btn-default" onclick="Uploadimage()">Upload</a>
+            </div>
+
+            <div class="form-group">
+                <button type="button" class="btn btn-primary" id="btnSave">Save</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="~/lib/jquery/dist/jquery.js"></script>
+
+<script>
+
+    $(document).ready(function () {
+
+
+        $("#btnSave").click(function ()
+        {
+            console.log("teste");
+
+
+            $.post('superman', { field1: "hello", field2: "hello2" },
+                function (returnedData) {
+                    console.log(returnedData);
+                }).fail(function () {
+                    console.log("error");
+                });
+        });
+
+
+
+
+        $("#imageBrowes").change(function () {
+            var File = this.files;
+
+            console.log(File);
+
+            var imgWidth = $('#imageBrowes').width();
+            var imgHeight = $('#imageBrowes').height();
+
+            if (imgWidth == 306 && imgHeight == 22) {
+                if (File && File[0]) {
+                    ReadImage(File[0]);
+                }
+
+            }
+            else {
+                alert('Your image is too big, it must be less than 200x200');
+            }
+
+
+        })
+
+    })
+
+
+    var ReadImage = function (file) {
+        var reader = new FileReader;
+        var image = new Image;
+
+        reader.readAsDataURL(file);
+        reader.onload = function (_file) {
+
+            image.src = _file.target.result;
+            image.onload = function () {
+
+                var height = this.height;
+                var width = this.width;
+                var type = file.type;
+                var size = ~~(file.size / 1024) + "KB";
+
+                $("#targetImg").attr('src', _file.target.result);
+                $("#description").text("Size:" + size + ", " + height + "X " + width + ", " + type + "");
+                $("#imgPreview").show();
+
+            }
+
+        }
+
+    }
+
+    var ClearPreview = function () {
+        $("#imageBrowes").val('');
+        $("#description").text('');
+        $("#imgPreview").hide();
+
+    }
+
+    var Uploadimage = function () {
+
+        var file = $("#imageBrowes").get(0).files;
+        var data = new FormData;
+        data.append("ImageFile", file[0]);
+        data.append("ProductName", "SamsungA8");
+
+        $.ajax({
+
+            type: "Post",
+            url: "/Test/ImageUpload",
+            data: data,
+            contentType: false,
+            processData: false,
+            success: function (response) {
+                ClearPreview();
+
+                $("#uploadedImage").append('<img src="/UploadedImage/' + response + '" class="img-responsive thumbnail"/>');
+
+
+            }
+
+        })
+
+
+        //
+    }
+
+</script>
